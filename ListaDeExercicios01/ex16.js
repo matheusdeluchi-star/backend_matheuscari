@@ -1,5 +1,4 @@
-const readline = require('readline-sync')
-const corte = Number(readline.question("Nota minima: ") || 7)
+const corte = 7
 const alunos = [
     { nome: "Ana", nota: 8.5 },
     { nome: "Bruno", nota: 6.0 },
@@ -22,4 +21,4 @@ for (let i = 0; i < alunos.length; i++) {
     somaNotas = somaNotas + alunos[i].nota
 }
 const media = somaNotas / alunos.length
-console.log(`Média: ${media.toFixed(2)}`)
+console.log(`Média: ${Math.round(media)}`)
