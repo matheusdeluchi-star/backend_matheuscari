@@ -1,0 +1,7 @@
+const readline = require('readline-sync')
+const v1 = Number(readline.question("Valor A: "))
+const v2 = Number(readline.question("Valor B: "))
+const calcular = (a, b, op) => op(a, b)
+console.log("Soma:", calcular(v1, v2, (x, y) => x + y))
+console.log("Sub:", calcular(v1, v2, (x, y) => x - y))
+console.log("Mult:", calcular(v1, v2, (x, y) => x * y))

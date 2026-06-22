@@ -1,0 +1,5 @@
+const readline = require('readline-sync')
+const base = Number(readline.question("digite a base"))
+const altura = Number(readline.question("digite a altura"))
+console.log(`Área: ${base * altura}`)
+console.log(`Perímetro: ${2 * (base + altura)}`)
